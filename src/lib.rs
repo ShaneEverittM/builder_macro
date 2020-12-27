@@ -129,7 +129,7 @@ pub fn derive(input: TokenStream) -> TokenStream {
         }
 
         impl #name {
-            fn builder() -> #bident {
+            pub fn builder() -> #bident {
                 #bident {
                     #(#empty_builder,)*
                 }
